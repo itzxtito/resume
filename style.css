@@ -1,0 +1,408 @@
+body {
+  background-color: black;
+  font-family: "Trebuchet MS";
+}
+
+/* Main container for centering */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.resumefront {
+  margin: 0 auto;
+  width: 400px;
+}
+
+/* Section 1 styling */
+.section1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 auto;
+  box-shadow: 5px 5px 10px white;
+}
+
+.box1 h1 {
+  margin: 10px 0 5px;
+  font-size: 2em;
+  color: white;
+}
+
+/* box 1 Image, Name, and Title */
+.box1 {
+  text-align: center;
+  color: white;
+  flex: 1 1 100%;
+  border: 5px solid transparent;
+  border-image: linear-gradient(to right, dodgerblue, white) 1;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: grey;
+  box-shadow: 5px 5px 10px white;
+  transition: background-color 1s, box-shadow 1s;
+  transition: box-shadow 2s ease, transform 2s ease;
+}
+
+.biography {
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.8;
+  color: white;
+  border: 5px solid transparent;
+  border-image: linear-gradient(to right, dodgerblue, white) 1;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 5px 5px 10px white;
+  background-color: grey;
+  transition: background-color 1s, box-shadow 1s;
+  transition: box-shadow 2s ease, transform 2s ease;
+}
+
+/*General Info Section */
+.general-info {
+  list-style: none;
+  line-height: 1.6;
+  color: white;
+  border: 5px solid transparent;
+  border-image: linear-gradient(to right, dodgerblue, white) 1;
+  border-radius: 15px;
+  padding: 30px;
+  background-color: grey;
+  box-shadow: 5px 5px 10px white;
+  transition: background-color 1s, box-shadow 1s;
+  transition: box-shadow 2s ease, transform 2s ease;
+}
+.general-info:hover {
+  background-color: gold;
+}
+.general-info a:hover {
+  color: white;
+}
+.bigbox:hover {
+  background-color: dodgerblue;
+  transition-duration: 2s;
+}
+
+
+h2 {
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.employment .bigbox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}
+
+.bigbox {
+  border-radius: 15px;
+  padding: 10px;
+  background-color: grey;
+  transition: 1s;
+  color: white;
+}
+
+.bigbox-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sections that need to share styling */
+.employment,
+.education,
+.skills {
+  width: 80%;
+  max-width: 800px;
+  text-align: left;
+  transition: 1s;
+  box-shadow: 5px 5px 10px white;
+  font-family: "Trebuchet MS";
+}
+
+.employment .job,
+.education .school,
+.skills .skill-category {
+  text-align: left;
+}
+
+
+/*employment section */
+.employment,
+.employment,
+.employment .job p {
+  color: white;
+  font-family: "Trebuchet MS";
+  font-size: 20px;
+}
+
+
+.job {
+  margin-bottom: 20px;
+}
+.job h3 {
+  margin: 5px 0;
+  font-size: 30px;
+}
+
+.job p {
+  margin-bottom: 20px;
+}
+
+/*Centering for middle boxes */
+.employment,
+.education,
+.skills {
+  margin: 30px auto;
+  max-width: 800px;
+  padding: 20px;
+  text-align: left;
+  border: solid black 5px;
+  border-radius: 15px;
+  background-color: grey;
+  transition: 1s;
+  font-family: "Trebuchet MS";
+}
+
+/*Education Section*/
+.education ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.education p,
+.education ul li {
+  text-align: left;
+  color: white;
+  margin: 20px 0;
+}
+
+
+
+.education,
+.education .school h3,
+.education .school p {
+  color: white;
+}
+
+.school {
+  margin-bottom: 40px;
+
+  font-size: 20px;
+}
+
+.school h3 {
+  margin: 20px 0;
+  font-size: 30px;
+}
+
+.school ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+.school p {
+  margin: 20px 0;
+  font-size: 1em;
+}
+
+/* Skills Section */
+.skills {
+  margin: 20px 0;
+  width: 250px;
+}
+
+.skill-category {
+  margin-bottom: 15px;
+}
+
+.skill-category h3 {
+  margin: 5px 0;
+  font-size: 1.5em;
+}
+
+.skill-category ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skill-category li {
+  margin: 3px 0;
+  font-size: 1.2em;
+}
+
+.skill-category h3,
+.skill-category ul li {
+  color: white;
+}
+
+h2::before {
+  content: "▼";
+  margin-right: 10px;
+  color: gold;
+  font-size: 1em;
+}
+
+/*Contact Form*/
+.contact-form-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: grey;
+  border: 5px solid black;
+  border-radius: 0px;
+  box-shadow: 5px 5px 10px white;
+  text-align: center;
+  transition: background-color 5s ease-in-out, box-shadow 1s ease-in-out;
+  transition: box-shadow 1s ease, transform 0.3s ease;
+}
+
+.contact-form h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+  color: white;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.contact-form button {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: black;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+.contact-form button:hover {
+  background-color: blue;
+}
+
+/*border designs for gradient looks*/
+.bigbox,
+.contact-form-container,
+.employment,
+.education,
+.skills,
+.box1 {
+  border: 5px solid transparent;
+  border-image: linear-gradient(to right, dodgerblue, white) 1;
+  border-radius: 1px;
+}
+
+.employment-header::before {
+  color: green;
+}
+
+.education-header::before {
+  color: cyan;
+}
+.skillsheader::before {
+  color: red;
+}
+.contact-header::before {
+  color: lawngreen;
+}
+
+
+/* arrows and hover effects*/
+.education-header:hover::before,
+.employment-header:hover::before,
+.skillsheader:hover::before {
+  color: yellow;
+}
+.contact-header:hover::before {
+  color: blue;
+}
+
+h3::before {
+  content: "➤";
+  font-size: 0.7m;
+  margin-right: 10px;
+  color: green;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h3:hover::before {
+  color: yellow;
+}
+
+.schoolheader::before,
+.schoolheader2::before {
+  color: cyan;
+}
+
+.programming::before,
+.graphic::before,
+.languages::before {
+  color: red;
+}
+
+.designer::before {
+  content: none;
+}
+
+.contact-form-container:hover {
+  background-color: gold;
+}
+
+.contact-form-container:hover,
+.general-info:hover,
+.box1:hover,
+.biography:hover,
+.employment:hover,
+.education:hover,
+.skills:hover {
+  background: linear-gradient(
+    to right,
+    grey 0%,
+    dodgerblue 20%,
+    purple 50%,
+    white 80%,
+    purple 100%
+  );
+
+  background-size: 200% auto;
+  animation: shimmer 1.5s infinite linear;
+  box-shadow: 0px 0px 20px 5px dodgerblue, 0px 0px 40px 10px dodgerblue,
+    0px 0px 60px 15px white;
+  transition: box-shadow 2s ease, transform 2s ease;
+  transform: scale(1.3); 
+}
